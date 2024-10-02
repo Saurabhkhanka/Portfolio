@@ -1,0 +1,341 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+
+
+/* Logo Styling */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+}
+
+.logo h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: #00c3ff;
+    font-family: 'Arial', sans-serif;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+}
+
+nav ul li a:hover {
+    color: #00c3ff;
+}
+
+/* Section Styles */
+section h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2rem;
+    color: #333;
+}
+
+section p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+/* Intro Section */
+#intro {
+    background-image: url('https://images.unsplash.com/photo-1513530534585-c7b1394c6d51?q=80&w=2942&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.intro-content {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Semi-transparent background */
+    padding: 12rem 0 0 10rem;
+}
+
+.intro-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.intro-content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.resume-btn {
+    padding: 10px 20px;
+    background-color: #00c3ff;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.resume-btn:hover {
+    background-color: #008bbf;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #fff;
+    margin: 0 15px;
+    text-decoration: none;
+    font-size: 1.2rem;
+}
+
+.social-links a:hover {
+    color: #00c3ff;
+}
+
+
+/* About Section */
+#about {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+    color: #333;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+#about p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 20px;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about-image {
+    margin-top: 30px;
+}
+
+.about-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #333;
+}
+
+
+/* Resume Section */
+#resume {
+    padding: 3.125rem;
+    background-color: #ffffff;
+    /* White background for the resume section */
+    color: #333;
+    /* Dark text color for readability */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#resume h2 {
+    font-size: 2.5rem;
+    /* Main heading size */
+    margin-bottom: 30px;
+    /* Space below the heading */
+    text-align: center;
+    /* Center align the heading */
+}
+
+.resume-content {
+    display: flex;
+}
+
+.resume-content .box {
+    border-left: 2px solid #007BFF;
+    padding-left: 1rem;
+}
+
+
+.resume-content h3 {
+    font-size: 2rem;
+    /* Subheading size */
+    margin-top: 30px;
+    /* Space above each subheading */
+    color: #007BFF;
+    /* Color for subheadings */
+}
+
+.resume-content p {
+    font-size: 1.1rem;
+    /* Paragraph text size */
+    margin-bottom: 15px;
+    /* Space below each paragraph */
+}
+
+.resume-content ul {
+    list-style-type: none;
+    /* Remove bullet points */
+    padding: 0;
+    /* Remove padding */
+}
+
+.resume-content ul li {
+    font-size: 1.1rem;
+    /* List item text size */
+    margin-bottom: 10px;
+    /* Space below each list item */
+}
+
+.resume-content strong {
+    color: #333;
+    /* Dark color for strong text */
+}
+
+
+
+/* Projects Section */
+#projects{
+   display: flex;
+   flex-direction: column;
+}
+
+#projects .projectContainer{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 3rem;
+ }
+
+
+#projects .project {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#projects h3 {
+    margin-top: 0;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+#projects p {
+    font-size: 1rem;
+    text-align: center;
+}
+
+.project-button {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #00c3ff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    border: none;
+    font-size: 1rem;
+}
+
+.project-button:hover {
+    background-color: #008bbf;
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+
+/* Contact Section */
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+form button {
+    padding: 10px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+form button:hover {
+    background-color: #00c3ff;
+}
+
+/* Footer Styles */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    /* position: fixed; */
+    width: 100%;
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+}
